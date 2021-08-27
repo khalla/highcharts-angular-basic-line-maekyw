@@ -1,0 +1,5 @@
+	{{filterLabel}}
+		<select style="height: 60px;" (change)="doSomething($event)">
+		<option *ngFor="let data of filterData" [value]="data.value">{{data.label}}</option>
+	</select>
+<highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions" [(update)]="updateFlag" ></highcharts-chart>
